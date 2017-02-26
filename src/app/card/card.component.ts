@@ -12,4 +12,8 @@ export class CardComponent  {
     @Input() task: Task;
     constructor() { }
 
+    statusToggle() {
+        this.task.completed = !this.task.completed;
+    }
+
 }
